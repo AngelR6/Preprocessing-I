@@ -164,7 +164,7 @@ nav {
 }
 
 .navigation {
-  width: 35%;
+  width: 38%;
 }
 
 .navigation a {
@@ -176,11 +176,13 @@ nav {
 
 @media (max-width: 500px) {
   nav {
-    flex-direction: column;
+    display: flex;
+    
   }
-
   .navigation {
+    flex-direction: column;
     width: 100%;
+    height: 400px;
     margin: 0;
   }
 }
@@ -234,15 +236,16 @@ button {
 
 .first-sec {
   max-width: 1050px;
-  height: 270px;
+  height: 320px;
+  padding: 10px 0px 10px 0px;
   margin: 0 auto;
   display: flex;
 }
 
 .about {
   width: 50%;
-  height: 35%;
-  font-size: 1.5rem;
+  height: auto;
+  font-size: 1.4rem;
 }
 
 .skill {
@@ -258,11 +261,24 @@ button {
 
 @media (max-width: 500px) {
   .first-sec {
+    display: flex;
+    flex-wrap: wrap;
+    height: 900px;
+  }
+
+  .about {
+    font-size: 1rem;
+    height: 40%;
+  }
+
+  .skill {
+    height: 40%;
   }
 }
 
 .second-sec {
   max-width: 1050px;
+  height: 300px;
   margin: 0 auto;
   display: flex;
 }
@@ -272,9 +288,18 @@ button {
 
 footer {
   max-width: 1050px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding: 0 415px;
   margin: 0 auto;
-  background-color: lightgrey;
+  background-color: rgb(117, 115, 115);
 }
 
 @media (max-width: 500px) {
+  footer {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 }
